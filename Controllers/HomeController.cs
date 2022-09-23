@@ -19,6 +19,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
         var vm = _dataService.GetJourneys();
         
         return View(vm);
